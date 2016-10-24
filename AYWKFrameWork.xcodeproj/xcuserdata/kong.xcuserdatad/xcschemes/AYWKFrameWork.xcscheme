@@ -5,6 +5,22 @@
    <BuildAction
       parallelizeBuildables = "YES"
       buildImplicitDependencies = "YES">
+      <BuildActionEntries>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "FC518BF61DBD9E9E00C08255"
+               BuildableName = "AYWKFrameWork.app"
+               BlueprintName = "AYWKFrameWork"
+               ReferencedContainer = "container:AYWKFrameWork.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+      </BuildActionEntries>
    </BuildAction>
    <TestAction
       buildConfiguration = "Debug"
@@ -12,7 +28,36 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "FC518C0F1DBD9E9E00C08255"
+               BuildableName = "AYWKFrameWorkTests.xctest"
+               BlueprintName = "AYWKFrameWorkTests"
+               ReferencedContainer = "container:AYWKFrameWork.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "FC518C1A1DBD9E9E00C08255"
+               BuildableName = "AYWKFrameWorkUITests.xctest"
+               BlueprintName = "AYWKFrameWorkUITests"
+               ReferencedContainer = "container:AYWKFrameWork.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "FC518BF61DBD9E9E00C08255"
+            BuildableName = "AYWKFrameWork.app"
+            BlueprintName = "AYWKFrameWork"
+            ReferencedContainer = "container:AYWKFrameWork.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -26,6 +71,16 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "FC518BF61DBD9E9E00C08255"
+            BuildableName = "AYWKFrameWork.app"
+            BlueprintName = "AYWKFrameWork"
+            ReferencedContainer = "container:AYWKFrameWork.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -35,6 +90,16 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "FC518BF61DBD9E9E00C08255"
+            BuildableName = "AYWKFrameWork.app"
+            BlueprintName = "AYWKFrameWork"
+            ReferencedContainer = "container:AYWKFrameWork.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

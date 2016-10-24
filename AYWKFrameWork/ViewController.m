@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "WKViewController.h"
 
 @interface ViewController ()
 
@@ -16,7 +17,14 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    self.title = @"首页";
+    
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    self.navigationController.navigationBar.backgroundColor = [UIColor whiteColor];
 }
 
 
@@ -25,5 +33,11 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)pushWKAction:(id)sender
+{
+    WKViewController *wkVC = [[WKViewController alloc] init];
+    [self.navigationController pushViewController:wkVC animated:YES];
+    
+}
 
 @end

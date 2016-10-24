@@ -15,6 +15,13 @@
 		FC518C0A1DBD9E9E00C08255 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC518C081DBD9E9E00C08255 /* LaunchScreen.storyboard */; };
 		FC518C151DBD9E9E00C08255 /* AYWKFrameWorkTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FC518C141DBD9E9E00C08255 /* AYWKFrameWorkTests.m */; };
 		FC518C201DBD9E9E00C08255 /* AYWKFrameWorkUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = FC518C1F1DBD9E9E00C08255 /* AYWKFrameWorkUITests.m */; };
+		FC518C341DBDA03900C08255 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC518C331DBDA03900C08255 /* BaseViewController.m */; };
+		FC518C371DBDA05D00C08255 /* WKViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC518C361DBDA05D00C08255 /* WKViewController.m */; };
+		FC56470B1DBDA26300A87412 /* AYHybridView.m in Sources */ = {isa = PBXBuildFile; fileRef = FC56470A1DBDA26300A87412 /* AYHybridView.m */; };
+		FC56470E1DBDA27500A87412 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC56470D1DBDA27500A87412 /* WebKit.framework */; };
+		FC5647111DBDA5B500A87412 /* AYWeakScriptMessageHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = FC5647101DBDA5B500A87412 /* AYWeakScriptMessageHandler.m */; };
+		FC5647141DBDAB3B00A87412 /* AYHybridBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = FC5647131DBDAB3B00A87412 /* AYHybridBridge.m */; };
+		FC56471A1DBDEB0000A87412 /* UIView+ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC5647191DBDEB0000A87412 /* UIView+ViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +58,21 @@
 		FC518C1B1DBD9E9E00C08255 /* AYWKFrameWorkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AYWKFrameWorkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC518C1F1DBD9E9E00C08255 /* AYWKFrameWorkUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AYWKFrameWorkUITests.m; sourceTree = "<group>"; };
 		FC518C211DBD9E9E00C08255 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC518C2D1DBD9EB400C08255 /* config.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = config.pch; sourceTree = "<group>"; };
+		FC518C321DBDA03800C08255 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		FC518C331DBDA03900C08255 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		FC518C351DBDA05D00C08255 /* WKViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKViewController.h; sourceTree = "<group>"; };
+		FC518C361DBDA05D00C08255 /* WKViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKViewController.m; sourceTree = "<group>"; };
+		FC5647091DBDA26300A87412 /* AYHybridView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AYHybridView.h; sourceTree = "<group>"; };
+		FC56470A1DBDA26300A87412 /* AYHybridView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AYHybridView.m; sourceTree = "<group>"; };
+		FC56470D1DBDA27500A87412 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		FC56470F1DBDA5B500A87412 /* AYWeakScriptMessageHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AYWeakScriptMessageHandler.h; sourceTree = "<group>"; };
+		FC5647101DBDA5B500A87412 /* AYWeakScriptMessageHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AYWeakScriptMessageHandler.m; sourceTree = "<group>"; };
+		FC5647121DBDAB3B00A87412 /* AYHybridBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AYHybridBridge.h; sourceTree = "<group>"; };
+		FC5647131DBDAB3B00A87412 /* AYHybridBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AYHybridBridge.m; sourceTree = "<group>"; };
+		FC5647181DBDEB0000A87412 /* UIView+ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ViewController.h"; sourceTree = "<group>"; };
+		FC5647191DBDEB0000A87412 /* UIView+ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ViewController.m"; sourceTree = "<group>"; };
+		FC56471B1DBDF9BA00A87412 /* HybridConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HybridConst.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC56470E1DBDA27500A87412 /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +108,7 @@
 				FC518C131DBD9E9E00C08255 /* AYWKFrameWorkTests */,
 				FC518C1E1DBD9E9E00C08255 /* AYWKFrameWorkUITests */,
 				FC518BF81DBD9E9E00C08255 /* Products */,
+				FC56470C1DBDA27500A87412 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,8 +125,14 @@
 		FC518BF91DBD9E9E00C08255 /* AYWKFrameWork */ = {
 			isa = PBXGroup;
 			children = (
+				FC518C2E1DBDA00300C08255 /* Library */,
 				FC518BFD1DBD9E9E00C08255 /* AppDelegate.h */,
 				FC518BFE1DBD9E9E00C08255 /* AppDelegate.m */,
+				FC518C351DBDA05D00C08255 /* WKViewController.h */,
+				FC518C361DBDA05D00C08255 /* WKViewController.m */,
+				FC518C321DBDA03800C08255 /* BaseViewController.h */,
+				FC518C331DBDA03900C08255 /* BaseViewController.m */,
+				FC518C2D1DBD9EB400C08255 /* config.pch */,
 				FC518C001DBD9E9E00C08255 /* ViewController.h */,
 				FC518C011DBD9E9E00C08255 /* ViewController.m */,
 				FC518C031DBD9E9E00C08255 /* Main.storyboard */,
@@ -138,6 +168,54 @@
 				FC518C211DBD9E9E00C08255 /* Info.plist */,
 			);
 			path = AYWKFrameWorkUITests;
+			sourceTree = "<group>";
+		};
+		FC518C2E1DBDA00300C08255 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				FC518C2F1DBDA00300C08255 /* Const */,
+				FC518C301DBDA00300C08255 /* Model */,
+				FC518C311DBDA00300C08255 /* View */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		FC518C2F1DBDA00300C08255 /* Const */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Const;
+			sourceTree = "<group>";
+		};
+		FC518C301DBDA00300C08255 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FC518C311DBDA00300C08255 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FC5647091DBDA26300A87412 /* AYHybridView.h */,
+				FC56470A1DBDA26300A87412 /* AYHybridView.m */,
+				FC5647181DBDEB0000A87412 /* UIView+ViewController.h */,
+				FC5647191DBDEB0000A87412 /* UIView+ViewController.m */,
+				FC56470F1DBDA5B500A87412 /* AYWeakScriptMessageHandler.h */,
+				FC5647101DBDA5B500A87412 /* AYWeakScriptMessageHandler.m */,
+				FC5647121DBDAB3B00A87412 /* AYHybridBridge.h */,
+				FC5647131DBDAB3B00A87412 /* AYHybridBridge.m */,
+				FC56471B1DBDF9BA00A87412 /* HybridConst.h */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FC56470C1DBDA27500A87412 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FC56470D1DBDA27500A87412 /* WebKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -276,8 +354,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC518C371DBDA05D00C08255 /* WKViewController.m in Sources */,
 				FC518C021DBD9E9E00C08255 /* ViewController.m in Sources */,
+				FC518C341DBDA03900C08255 /* BaseViewController.m in Sources */,
+				FC56471A1DBDEB0000A87412 /* UIView+ViewController.m in Sources */,
 				FC518BFF1DBD9E9E00C08255 /* AppDelegate.m in Sources */,
+				FC5647141DBDAB3B00A87412 /* AYHybridBridge.m in Sources */,
+				FC56470B1DBDA26300A87412 /* AYHybridView.m in Sources */,
+				FC5647111DBDA5B500A87412 /* AYWeakScriptMessageHandler.m in Sources */,
 				FC518BFC1DBD9E9E00C08255 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -428,6 +512,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 628LRYYF8F;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/AYWKFrameWork/config.pch";
 				INFOPLIST_FILE = AYWKFrameWork/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.konglee.AYWKFrameWork;
@@ -440,6 +525,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 628LRYYF8F;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/AYWKFrameWork/config.pch";
 				INFOPLIST_FILE = AYWKFrameWork/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.konglee.AYWKFrameWork;
@@ -516,6 +602,7 @@
 				FC518C261DBD9E9E00C08255 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FC518C271DBD9E9E00C08255 /* Build configuration list for PBXNativeTarget "AYWKFrameWorkTests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +611,7 @@
 				FC518C291DBD9E9E00C08255 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FC518C2A1DBD9E9E00C08255 /* Build configuration list for PBXNativeTarget "AYWKFrameWorkUITests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +620,7 @@
 				FC518C2C1DBD9E9E00C08255 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
