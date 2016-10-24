@@ -1,0 +1,539 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FC518BFC1DBD9E9E00C08255 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FC518BFB1DBD9E9E00C08255 /* main.m */; };
+		FC518BFF1DBD9E9E00C08255 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FC518BFE1DBD9E9E00C08255 /* AppDelegate.m */; };
+		FC518C021DBD9E9E00C08255 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC518C011DBD9E9E00C08255 /* ViewController.m */; };
+		FC518C051DBD9E9E00C08255 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC518C031DBD9E9E00C08255 /* Main.storyboard */; };
+		FC518C071DBD9E9E00C08255 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC518C061DBD9E9E00C08255 /* Assets.xcassets */; };
+		FC518C0A1DBD9E9E00C08255 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC518C081DBD9E9E00C08255 /* LaunchScreen.storyboard */; };
+		FC518C151DBD9E9E00C08255 /* AYWKFrameWorkTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FC518C141DBD9E9E00C08255 /* AYWKFrameWorkTests.m */; };
+		FC518C201DBD9E9E00C08255 /* AYWKFrameWorkUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = FC518C1F1DBD9E9E00C08255 /* AYWKFrameWorkUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FC518C111DBD9E9E00C08255 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FC518BEF1DBD9E9E00C08255 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FC518BF61DBD9E9E00C08255;
+			remoteInfo = AYWKFrameWork;
+		};
+		FC518C1C1DBD9E9E00C08255 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FC518BEF1DBD9E9E00C08255 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FC518BF61DBD9E9E00C08255;
+			remoteInfo = AYWKFrameWork;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FC518BF71DBD9E9E00C08255 /* AYWKFrameWork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AYWKFrameWork.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC518BFB1DBD9E9E00C08255 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FC518BFD1DBD9E9E00C08255 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FC518BFE1DBD9E9E00C08255 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FC518C001DBD9E9E00C08255 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		FC518C011DBD9E9E00C08255 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		FC518C041DBD9E9E00C08255 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FC518C061DBD9E9E00C08255 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FC518C091DBD9E9E00C08255 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FC518C0B1DBD9E9E00C08255 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC518C101DBD9E9E00C08255 /* AYWKFrameWorkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AYWKFrameWorkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC518C141DBD9E9E00C08255 /* AYWKFrameWorkTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AYWKFrameWorkTests.m; sourceTree = "<group>"; };
+		FC518C161DBD9E9E00C08255 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC518C1B1DBD9E9E00C08255 /* AYWKFrameWorkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AYWKFrameWorkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC518C1F1DBD9E9E00C08255 /* AYWKFrameWorkUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AYWKFrameWorkUITests.m; sourceTree = "<group>"; };
+		FC518C211DBD9E9E00C08255 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FC518BF41DBD9E9E00C08255 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC518C0D1DBD9E9E00C08255 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC518C181DBD9E9E00C08255 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FC518BEE1DBD9E9E00C08255 = {
+			isa = PBXGroup;
+			children = (
+				FC518BF91DBD9E9E00C08255 /* AYWKFrameWork */,
+				FC518C131DBD9E9E00C08255 /* AYWKFrameWorkTests */,
+				FC518C1E1DBD9E9E00C08255 /* AYWKFrameWorkUITests */,
+				FC518BF81DBD9E9E00C08255 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FC518BF81DBD9E9E00C08255 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FC518BF71DBD9E9E00C08255 /* AYWKFrameWork.app */,
+				FC518C101DBD9E9E00C08255 /* AYWKFrameWorkTests.xctest */,
+				FC518C1B1DBD9E9E00C08255 /* AYWKFrameWorkUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FC518BF91DBD9E9E00C08255 /* AYWKFrameWork */ = {
+			isa = PBXGroup;
+			children = (
+				FC518BFD1DBD9E9E00C08255 /* AppDelegate.h */,
+				FC518BFE1DBD9E9E00C08255 /* AppDelegate.m */,
+				FC518C001DBD9E9E00C08255 /* ViewController.h */,
+				FC518C011DBD9E9E00C08255 /* ViewController.m */,
+				FC518C031DBD9E9E00C08255 /* Main.storyboard */,
+				FC518C061DBD9E9E00C08255 /* Assets.xcassets */,
+				FC518C081DBD9E9E00C08255 /* LaunchScreen.storyboard */,
+				FC518C0B1DBD9E9E00C08255 /* Info.plist */,
+				FC518BFA1DBD9E9E00C08255 /* Supporting Files */,
+			);
+			path = AYWKFrameWork;
+			sourceTree = "<group>";
+		};
+		FC518BFA1DBD9E9E00C08255 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FC518BFB1DBD9E9E00C08255 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FC518C131DBD9E9E00C08255 /* AYWKFrameWorkTests */ = {
+			isa = PBXGroup;
+			children = (
+				FC518C141DBD9E9E00C08255 /* AYWKFrameWorkTests.m */,
+				FC518C161DBD9E9E00C08255 /* Info.plist */,
+			);
+			path = AYWKFrameWorkTests;
+			sourceTree = "<group>";
+		};
+		FC518C1E1DBD9E9E00C08255 /* AYWKFrameWorkUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FC518C1F1DBD9E9E00C08255 /* AYWKFrameWorkUITests.m */,
+				FC518C211DBD9E9E00C08255 /* Info.plist */,
+			);
+			path = AYWKFrameWorkUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FC518BF61DBD9E9E00C08255 /* AYWKFrameWork */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FC518C241DBD9E9E00C08255 /* Build configuration list for PBXNativeTarget "AYWKFrameWork" */;
+			buildPhases = (
+				FC518BF31DBD9E9E00C08255 /* Sources */,
+				FC518BF41DBD9E9E00C08255 /* Frameworks */,
+				FC518BF51DBD9E9E00C08255 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AYWKFrameWork;
+			productName = AYWKFrameWork;
+			productReference = FC518BF71DBD9E9E00C08255 /* AYWKFrameWork.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FC518C0F1DBD9E9E00C08255 /* AYWKFrameWorkTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FC518C271DBD9E9E00C08255 /* Build configuration list for PBXNativeTarget "AYWKFrameWorkTests" */;
+			buildPhases = (
+				FC518C0C1DBD9E9E00C08255 /* Sources */,
+				FC518C0D1DBD9E9E00C08255 /* Frameworks */,
+				FC518C0E1DBD9E9E00C08255 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FC518C121DBD9E9E00C08255 /* PBXTargetDependency */,
+			);
+			name = AYWKFrameWorkTests;
+			productName = AYWKFrameWorkTests;
+			productReference = FC518C101DBD9E9E00C08255 /* AYWKFrameWorkTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FC518C1A1DBD9E9E00C08255 /* AYWKFrameWorkUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FC518C2A1DBD9E9E00C08255 /* Build configuration list for PBXNativeTarget "AYWKFrameWorkUITests" */;
+			buildPhases = (
+				FC518C171DBD9E9E00C08255 /* Sources */,
+				FC518C181DBD9E9E00C08255 /* Frameworks */,
+				FC518C191DBD9E9E00C08255 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FC518C1D1DBD9E9E00C08255 /* PBXTargetDependency */,
+			);
+			name = AYWKFrameWorkUITests;
+			productName = AYWKFrameWorkUITests;
+			productReference = FC518C1B1DBD9E9E00C08255 /* AYWKFrameWorkUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FC518BEF1DBD9E9E00C08255 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = konglee;
+				TargetAttributes = {
+					FC518BF61DBD9E9E00C08255 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 628LRYYF8F;
+						ProvisioningStyle = Automatic;
+					};
+					FC518C0F1DBD9E9E00C08255 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 628LRYYF8F;
+						ProvisioningStyle = Automatic;
+						TestTargetID = FC518BF61DBD9E9E00C08255;
+					};
+					FC518C1A1DBD9E9E00C08255 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 628LRYYF8F;
+						ProvisioningStyle = Automatic;
+						TestTargetID = FC518BF61DBD9E9E00C08255;
+					};
+				};
+			};
+			buildConfigurationList = FC518BF21DBD9E9E00C08255 /* Build configuration list for PBXProject "AYWKFrameWork" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FC518BEE1DBD9E9E00C08255;
+			productRefGroup = FC518BF81DBD9E9E00C08255 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FC518BF61DBD9E9E00C08255 /* AYWKFrameWork */,
+				FC518C0F1DBD9E9E00C08255 /* AYWKFrameWorkTests */,
+				FC518C1A1DBD9E9E00C08255 /* AYWKFrameWorkUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FC518BF51DBD9E9E00C08255 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC518C0A1DBD9E9E00C08255 /* LaunchScreen.storyboard in Resources */,
+				FC518C071DBD9E9E00C08255 /* Assets.xcassets in Resources */,
+				FC518C051DBD9E9E00C08255 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC518C0E1DBD9E9E00C08255 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC518C191DBD9E9E00C08255 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FC518BF31DBD9E9E00C08255 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC518C021DBD9E9E00C08255 /* ViewController.m in Sources */,
+				FC518BFF1DBD9E9E00C08255 /* AppDelegate.m in Sources */,
+				FC518BFC1DBD9E9E00C08255 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC518C0C1DBD9E9E00C08255 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC518C151DBD9E9E00C08255 /* AYWKFrameWorkTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC518C171DBD9E9E00C08255 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC518C201DBD9E9E00C08255 /* AYWKFrameWorkUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FC518C121DBD9E9E00C08255 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FC518BF61DBD9E9E00C08255 /* AYWKFrameWork */;
+			targetProxy = FC518C111DBD9E9E00C08255 /* PBXContainerItemProxy */;
+		};
+		FC518C1D1DBD9E9E00C08255 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FC518BF61DBD9E9E00C08255 /* AYWKFrameWork */;
+			targetProxy = FC518C1C1DBD9E9E00C08255 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FC518C031DBD9E9E00C08255 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FC518C041DBD9E9E00C08255 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FC518C081DBD9E9E00C08255 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FC518C091DBD9E9E00C08255 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FC518C221DBD9E9E00C08255 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FC518C231DBD9E9E00C08255 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FC518C251DBD9E9E00C08255 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 628LRYYF8F;
+				INFOPLIST_FILE = AYWKFrameWork/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.konglee.AYWKFrameWork;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FC518C261DBD9E9E00C08255 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 628LRYYF8F;
+				INFOPLIST_FILE = AYWKFrameWork/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.konglee.AYWKFrameWork;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		FC518C281DBD9E9E00C08255 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 628LRYYF8F;
+				INFOPLIST_FILE = AYWKFrameWorkTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.konglee.AYWKFrameWorkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AYWKFrameWork.app/AYWKFrameWork";
+			};
+			name = Debug;
+		};
+		FC518C291DBD9E9E00C08255 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 628LRYYF8F;
+				INFOPLIST_FILE = AYWKFrameWorkTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.konglee.AYWKFrameWorkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AYWKFrameWork.app/AYWKFrameWork";
+			};
+			name = Release;
+		};
+		FC518C2B1DBD9E9E00C08255 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 628LRYYF8F;
+				INFOPLIST_FILE = AYWKFrameWorkUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.konglee.AYWKFrameWorkUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = AYWKFrameWork;
+			};
+			name = Debug;
+		};
+		FC518C2C1DBD9E9E00C08255 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 628LRYYF8F;
+				INFOPLIST_FILE = AYWKFrameWorkUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.konglee.AYWKFrameWorkUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = AYWKFrameWork;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FC518BF21DBD9E9E00C08255 /* Build configuration list for PBXProject "AYWKFrameWork" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC518C221DBD9E9E00C08255 /* Debug */,
+				FC518C231DBD9E9E00C08255 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FC518C241DBD9E9E00C08255 /* Build configuration list for PBXNativeTarget "AYWKFrameWork" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC518C251DBD9E9E00C08255 /* Debug */,
+				FC518C261DBD9E9E00C08255 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FC518C271DBD9E9E00C08255 /* Build configuration list for PBXNativeTarget "AYWKFrameWorkTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC518C281DBD9E9E00C08255 /* Debug */,
+				FC518C291DBD9E9E00C08255 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FC518C2A1DBD9E9E00C08255 /* Build configuration list for PBXNativeTarget "AYWKFrameWorkUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC518C2B1DBD9E9E00C08255 /* Debug */,
+				FC518C2C1DBD9E9E00C08255 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FC518BEF1DBD9E9E00C08255 /* Project object */;
+}
