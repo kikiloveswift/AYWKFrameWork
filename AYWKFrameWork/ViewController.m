@@ -10,6 +10,9 @@
 #import "WKViewController.h"
 
 @interface ViewController ()
+{
+    UILabel *_label;
+}
 
 @end
 
@@ -24,7 +27,7 @@
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
-    self.navigationController.navigationBar.backgroundColor = [UIColor whiteColor];
+    self.navigationController.navigationBarHidden = NO;
 }
 
 

@@ -9,7 +9,8 @@
 #ifndef HybridConst_h
 #define HybridConst_h
 
-#if TARGET_OS_IPHONE
+//ios判断设备类型
+#define HybridDevicetype @"iosgetHybridConfig"
 
 //ios请求API接口
 #define HybridInvoke @"iosinvoke"
@@ -24,7 +25,7 @@
 #define HybridOpenShare @"iosopensharedialog"
 
 //ios初始化导航栏
-#define HybridinitHeader @"iosinithybridheader"
+#define HybridinitHeader @"iosinitHybridHeader"
 
 //ios是否隐藏头
 #define Hybridheadervisible @"iossethybridheadervisible"
@@ -38,10 +39,5 @@
 //ios去搜索结果页
 #define HybridOpenSearch @"iosopensearch"
 
-
-
-#else
-
-#endif
 
 #endif

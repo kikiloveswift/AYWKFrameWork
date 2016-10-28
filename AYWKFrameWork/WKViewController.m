@@ -22,18 +22,17 @@
 {
     [super viewDidLoad];
     [self initUI];
+    self.fd_prefersNavigationBarHidden = YES;
+    self.fd_interactivePopDisabled = NO;
+    self.fd_interactivePopMaxAllowedInitialDistanceToLeftEdge = 100.f;
 }
 
 - (void)initUI
 {
-    self.navigationController.navigationBar.backgroundColor = [UIColor orangeColor];
-    self.view.backgroundColor = [UIColor whiteColor];
-    self.title = @"HyBrid融合页面";
-    NSString *requestURL1 = @"http://192.168.99.61:8080/?devicetype=ios";
-//    NSString *requestURL2 = @"http://192.168.103.98:8080/WK/index.html";
-    _hybridRootview = [[AYHybridView alloc] initWithFrame:CGRectMake(0, 0, KWidth, KHeight) AndRequst:requestURL1];
+    NSString *requestURL = @"http://192.168.103.79:8080/WKT/index.html";
+//    NSString *requestURL = @"http://192.168.99.67:8080/faxian/?devicetype=ios";
+    _hybridRootview = [[AYHybridView alloc] initWithFrame:CGRectMake(0, 0, KWidth, KHeight) AndRequst:requestURL];
     [self.view addSubview:_hybridRootview];
-    
 }
 
 

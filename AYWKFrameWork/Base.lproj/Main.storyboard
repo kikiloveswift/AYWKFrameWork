@@ -10,9 +10,11 @@
         <scene sceneID="JAM-o7-er8">
             <objects>
                 <navigationController id="EQm-YF-Sqw" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="nrc-wM-QdR">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="nrc-wM-QdR">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.91764705879999997" green="0.2784313725" blue="0.035294117649999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" red="0.96007806220000003" green="1" blue="0.46379445270000003" alpha="1" colorSpace="calibratedRGB"/>
                     </navigationBar>
                     <connections>
                         <segue destination="e0A-Kd-YHg" kind="relationship" relationship="rootViewController" id="Vvh-Kb-kcx"/>
@@ -31,7 +33,7 @@
                         <viewControllerLayoutGuide type="bottom" id="PqY-Mi-Bgd"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="f8O-uO-Wpg">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="osZ-pz-HvV">
@@ -52,7 +54,9 @@
                             <constraint firstItem="osZ-pz-HvV" firstAttribute="centerX" secondItem="f8O-uO-Wpg" secondAttribute="centerX" id="QZI-Qd-XGF"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="ZbO-vs-01U"/>
+                    <navigationItem key="navigationItem" id="ZbO-vs-01U">
+                        <nil key="title"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lgD-9O-AxS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

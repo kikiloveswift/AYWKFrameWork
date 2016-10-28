@@ -13,8 +13,34 @@
 
 #define KHeight [UIScreen mainScreen].bounds.size.height
 
+#define KNURL @"http://mservice.aoyou.com/"
+
+#define kAPPID @"app300382"           // 需要接口提供新版本的APPID和APPKey
+#define kAPPkey @"BF7D61EB36DEABFA0B241A06798A70C8"
+
+#define kAdId [[[UIDevice currentDevice] identifierForVendor] UUIDString]
+
+#define kAppUserAgentValue [NSString stringWithFormat:@"%@/%@/%@/%@/", kAPPID,kAPPkey,kAdId,@"-1"]
+
+#define DLog(fmt, ...) NSLog((@"[文件名:%s]\n" "[函数名:%s]\n" "[行号:%d] \n" fmt), __FILE__, __FUNCTION__, __LINE__, ##__VA_ARGS__);
+
 #import "HybridConst.h"
 
 #import "UIView+ViewController.h"
+
+#import "KLData.h"
+
+#import "AFNetworking.h"
+
+#import "KLAF.h"
+
+#import "ShareConfig.h"
+
+#import "download.h"
+
+#import "UINavigationController+FDFullscreenPopGesture.h"
+
+
+
 
 #endif
