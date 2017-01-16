@@ -29,8 +29,8 @@
 
 - (void)initUI
 {
-    NSString *requestURL = @"http://192.168.103.79:8080/WKT/index.html";
-//    NSString *requestURL = @"http://192.168.99.67:8080/faxian/?devicetype=ios";
+//    NSString *requestURL = @"http://192.168.103.79:8080/WKT/index.html";
+    NSString *requestURL = @"http://m.aoyou.com";
     _hybridRootview = [[AYHybridView alloc] initWithFrame:CGRectMake(0, 0, KWidth, KHeight) AndRequst:requestURL];
     [self.view addSubview:_hybridRootview];
 }

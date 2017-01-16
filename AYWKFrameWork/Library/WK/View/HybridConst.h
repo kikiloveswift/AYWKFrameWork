@@ -12,6 +12,9 @@
 //ios判断设备类型
 #define HybridDevicetype @"iosgetHybridConfig"
 
+//ios保存本地头的内容
+#define HybridSaveHeaderContext @"iosSaveHeaderContext"
+
 //ios请求API接口
 #define HybridInvoke @"iosinvoke"
 

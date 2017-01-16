@@ -55,31 +55,31 @@
 {
     WKWebViewConfiguration *configuration = [[WKWebViewConfiguration alloc] init];
     configuration.preferences = [WKPreferences new];
-    // 默认为0
-//    configuration.preferences.minimumFontSize = 10;
+    configuration.preferences.minimumFontSize = 10;
     configuration.preferences.javaScriptEnabled = YES;
-//    // 在iOS上默认为NO，表示不能自动通过窗口打开
-//    configuration.preferences.javaScriptCanOpenWindowsAutomatically = NO;
+    configuration.preferences.javaScriptCanOpenWindowsAutomatically = NO;
     configuration.userContentController = [WKUserContentController new];
     _webView = [[WKWebView alloc] initWithFrame:CGRectMake(0, 64, KWidth, self.frame.size.height - 64) configuration:configuration];
     _webView.allowsBackForwardNavigationGestures = YES;
     
     [_webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:_requestURL]]];
     _useWebView = _webView;
+
     [self initProgressView];
     [self addKVOOserver];
     [self initNav];
     [self.useWebView setAutoresizingMask:UIViewAutoresizingFlexibleWidth|UIViewAutoresizingFlexibleHeight];
     [self addSubview:self.useWebView];
     
-    //Test刷新
-    UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
-    btn.frame = CGRectMake(KWidth - 100, 84, 80, 50);
-    btn.backgroundColor = [UIColor lightGrayColor];
-    [btn setTitle:@"刷新" forState:UIControlStateNormal];
-    [btn addTarget:self action:@selector(btnAction:) forControlEvents:UIControlEventTouchUpInside];
-    [self addSubview:btn];
+//    //Test刷新
+//    UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
+//    btn.frame = CGRectMake(KWidth - 100, 84, 80, 50);
+//    btn.backgroundColor = [UIColor lightGrayColor];
+//    [btn setTitle:@"刷新" forState:UIControlStateNormal];
+//    [btn addTarget:self action:@selector(btnAction:) forControlEvents:UIControlEventTouchUpInside];
+//    [self addSubview:btn];
 }
+
 
 - (void)initNav
 {
@@ -108,7 +108,6 @@
     {
         [_webView evaluateJavaScript:nav.subNavModel.back_function_name completionHandler:nil];
     }else{
-        
         if ([_webView canGoBack]) {
             [_webView goBack];
         }else{
@@ -154,21 +153,38 @@
         NSDictionary *dic = [KLData dicWithJsonString:message.body];
         if ([dic isKindOfClass:[NSDictionary class]])
         {
-            AYSubNavModel *subNavModel = [[AYSubNavModel alloc] initContentWithDic:dic];
-            nav.subNavModel = subNavModel;
-            if ([subNavModel.is_visible  isEqual: @1]) {
-                //显示
-                nav.hidden = NO;
-                _webView.frame = CGRectMake(0, 64, KWidth, KHeight - 64);
-            }else if ([subNavModel.is_visible isEqual: @0]){
-                //隐藏
-                nav.hidden = YES;
-                _webView.frame = CGRectMake(0, 20, KWidth, KHeight - 20);
-            }
-            
-            NSLog(@"subModel is %@",subNavModel);
+            [self setHybridHeader:dic];
         }
     }
+}
+
+- (void)jsActionToOCAboutCurHeader:(NSString *)message Body:(id)body
+{
+    if ([message isEqualToString:HybridinitHeader])
+    {
+        NSDictionary *dic = [KLData dicWithJsonString:body];
+        if ([dic isKindOfClass:[NSDictionary class]])
+        {
+            [self setHybridHeader:dic];
+        }
+    }
+}
+
+- (void)setHybridHeader:(NSDictionary *)dic
+{
+    AYSubNavModel *subNavModel = [[AYSubNavModel alloc] initContentWithDic:dic];
+    nav.subNavModel = subNavModel;
+    if ([subNavModel.is_visible  isEqual: @1]) {
+        //显示
+        nav.hidden = NO;
+        _webView.frame = CGRectMake(0, 64, KWidth, KHeight - 64);
+    }else if ([subNavModel.is_visible isEqual: @0]){
+        //隐藏
+        nav.hidden = YES;
+        _webView.frame = CGRectMake(0, 20, KWidth, KHeight - 20);
+    }
+    
+    NSLog(@"subModel is %@",subNavModel);
 }
 
 //添加KVO监听
@@ -206,13 +222,11 @@
         {
             self.viewController.fd_interactivePopDisabled = NO;
         }
-    }
-    else
+    }else
     {
         [super observeValueForKeyPath:keyPath ofObject:object change:change context:context];
     }
 }
-
 
 - (void)dealloc
 {
@@ -221,6 +235,8 @@
     self.bridge = nil;
     [_webView removeObserver:self forKeyPath:@"estimatedProgress"];
     [_webView removeObserver:self forKeyPath:@"canGoBack"];
+    _webView = nil;
+    _useWebView = nil;
 }
 
 @end

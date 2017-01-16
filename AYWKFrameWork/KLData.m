@@ -12,6 +12,10 @@
 
 + (id)dicWithJsonString:(id)jsonString
 {
+    if (jsonString == nil || [jsonString isKindOfClass:[NSNull class]] )
+    {
+        return nil;
+    }
     jsonString = [jsonString dataUsingEncoding:NSUTF8StringEncoding];
     
     id json = [NSJSONSerialization JSONObjectWithData:jsonString options:NSJSONReadingMutableContainers |NSJSONReadingMutableLeaves error:nil];
